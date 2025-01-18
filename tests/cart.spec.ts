@@ -1,6 +1,12 @@
 import { test, expect } from "@playwright/test";
 import { Shoppingcart } from "../objects/shoppingcart";
 
+
+/**
+ * Note: Here assume that page is already navigated to the shopping cart page.
+ * and there are 2 items in the cart.
+ */
+
 test("remove item from cart", async ({ page }) => {
   const shoppingCart = new Shoppingcart(page);
 
